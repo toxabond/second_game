@@ -1,3 +1,5 @@
 include ':andEngine'
 include ':TestApp', ':simple',':level',':repeating' ,':parallaxBackground',':buttonSprite',':modifier'
 include ':zoomCamera', ':smoothCamera',':stitchedBackground'
+include ':myFullSample'
+include ':toxa_game'
