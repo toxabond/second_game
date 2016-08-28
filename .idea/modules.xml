@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestApp/TestApp.iml" filepath="$PROJECT_DIR$/TestApp/TestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andEngine/andEngine.iml" filepath="$PROJECT_DIR$/andEngine/andEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buttonSprite/buttonSprite.iml" filepath="$PROJECT_DIR$/buttonSprite/buttonSprite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/level/level.iml" filepath="$PROJECT_DIR$/level/level.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modifier/modifier.iml" filepath="$PROJECT_DIR$/modifier/modifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parallaxBackground/parallaxBackground.iml" filepath="$PROJECT_DIR$/parallaxBackground/parallaxBackground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repeating/repeating.iml" filepath="$PROJECT_DIR$/repeating/repeating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple/simple.iml" filepath="$PROJECT_DIR$/simple/simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smoothCamera/smoothCamera.iml" filepath="$PROJECT_DIR$/smoothCamera/smoothCamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stitchedBackground/stitchedBackground.iml" filepath="$PROJECT_DIR$/stitchedBackground/stitchedBackground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zoomCamera/zoomCamera.iml" filepath="$PROJECT_DIR$/zoomCamera/zoomCamera.iml" />
+    </modules>
+  </component>
+</project>
