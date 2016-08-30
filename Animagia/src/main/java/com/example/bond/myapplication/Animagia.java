@@ -43,7 +43,9 @@ public class Animagia extends BaseGameActivity {
 //    private TextureRegion mStarTextureRegion;
 //    private TiledTextureRegion mTiledTextureRegion;
 //    private TextureRegion textureRegion;
-    private BitmapTextureAtlas titulButoon;
+    private ITextureRegion mRectangleOneTextureRegion;
+
+
     private MapRengionTexture mapRengionTexture;
     private MapScene mapScene;
     private Camera camera;
@@ -76,9 +78,12 @@ public class Animagia extends BaseGameActivity {
         addTexture(4, "freep.png", buildableBitmapTextureAtlas);
 
 
+        mRectangleOneTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(buildableBitmapTextureAtlas, this, "book.png");
+
         BlackPawnTextureAtlasBuilder<IBitmapTextureAtlasSource, BitmapTextureAtlas> blackPawnTextureAtlasBuilder = new BlackPawnTextureAtlasBuilder<>(0, 0, 0);
         buildableBitmapTextureAtlas.build(blackPawnTextureAtlasBuilder);
         buildableBitmapTextureAtlas.load();
+
 
 
         pOnCreateResourcesCallback.onCreateResourcesFinished();
@@ -112,6 +117,9 @@ public class Animagia extends BaseGameActivity {
         }
 
         scene.setBackground(new SpriteBackground(pSprite));
+
+        Sprite bookSprite = new Sprite(0,0,mRectangleOneTextureRegion,getVertexBufferObjectManager());
+        scene.attachChild(bookSprite);
 //        scene.setBackground(new RectangularShape(0,0,200,200,new ShaderProgram()))
 //        scene.setBackground(new Background(0.9804f, 0.8f, 0.0f));
 
