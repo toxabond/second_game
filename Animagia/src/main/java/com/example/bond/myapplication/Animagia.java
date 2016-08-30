@@ -33,7 +33,7 @@ import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.texture.region.TiledTextureRegion;
 import org.andengine.ui.activity.BaseGameActivity;
 
-public class MainActivity extends BaseGameActivity {
+public class Animagia extends BaseGameActivity {
 
     public static final int CAMERA_WIDTH = 800;
     public static final int CAMERA_HEIGHT = 480;
@@ -43,6 +43,7 @@ public class MainActivity extends BaseGameActivity {
 //    private TextureRegion mStarTextureRegion;
 //    private TiledTextureRegion mTiledTextureRegion;
 //    private TextureRegion textureRegion;
+    private BitmapTextureAtlas titulButoon;
     private MapRengionTexture mapRengionTexture;
     private MapScene mapScene;
     private Camera camera;
@@ -73,9 +74,6 @@ public class MainActivity extends BaseGameActivity {
         addTexture(2, "water.png", buildableBitmapTextureAtlas);
         addTexture(3, "stoone.png", buildableBitmapTextureAtlas);
         addTexture(4, "freep.png", buildableBitmapTextureAtlas);
-        addTexture(5, "bag.png", buildableBitmapTextureAtlas);
-        addTexture(6, "book.png", buildableBitmapTextureAtlas);
-        addTexture(7, "animit.png", buildableBitmapTextureAtlas);
 
 
         BlackPawnTextureAtlasBuilder<IBitmapTextureAtlasSource, BitmapTextureAtlas> blackPawnTextureAtlasBuilder = new BlackPawnTextureAtlasBuilder<>(0, 0, 0);
