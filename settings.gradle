@@ -3,3 +3,4 @@ include ':TestApp', ':simple',':level',':repeating' ,':parallaxBackground',':but
 include ':zoomCamera', ':smoothCamera',':stitchedBackground'
 include ':myFullSample'
 include ':toxa_game'
+include ":Animagia"
