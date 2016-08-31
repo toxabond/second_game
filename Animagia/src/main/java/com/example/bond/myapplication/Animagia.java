@@ -7,6 +7,7 @@ import com.example.bond.myapplication.sceneTouch.MapScene;
 import com.example.bond.myapplication.sceneTouch.SceneTouchListener;
 
 import org.andengine.engine.camera.Camera;
+import org.andengine.engine.camera.hud.HUD;
 import org.andengine.engine.options.EngineOptions;
 import org.andengine.engine.options.ScreenOrientation;
 import org.andengine.engine.options.resolutionpolicy.FillResolutionPolicy;
@@ -108,7 +109,6 @@ public class Animagia extends BaseGameActivity {
         scene = new Scene();
 //        scene.setBackground(new SpriteBackground(new Sprite(0, 0, textureRegion, getVertexBufferObjectManager())));
 
-
         Sprite pSprite = null;
         for (int i = 0; i < mapScene.map.size(); i++) {
           for (int j=0; j<mapScene.map.get(i).size(); j++){
@@ -123,12 +123,15 @@ public class Animagia extends BaseGameActivity {
 
         scene.setBackground(new SpriteBackground(pSprite));
 
+        HUD headsUpDisplay = new HUD();
+        mEngine.getCamera().setHUD(headsUpDisplay);
+
         Sprite bookSprite = new Sprite(0,0,mRectangleOneTextureRegion,getVertexBufferObjectManager());
-        scene.attachChild(bookSprite);
+        headsUpDisplay.attachChild(bookSprite);
         Sprite animitSprite = new Sprite(50,50,mRectangleOneTextureRegion2,getVertexBufferObjectManager());
-        scene.attachChild(animitSprite);
+        headsUpDisplay.attachChild(animitSprite);
         Sprite bagSprite = new Sprite(200,200,mRectangleOneTextureRegion3,getVertexBufferObjectManager());
-        scene.attachChild(bagSprite);
+        headsUpDisplay.attachChild(bagSprite);
 //        scene.setBackground(new RectangularShape(0,0,200,200,new ShaderProgram()))
 //        scene.setBackground(new Background(0.9804f, 0.8f, 0.0f));
 
