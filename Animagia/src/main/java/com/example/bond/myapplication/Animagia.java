@@ -50,6 +50,9 @@ public class Animagia extends BaseGameActivity {
     private MapScene mapScene;
     private Camera camera;
     private Scene scene;
+    private ITextureRegion mRectangleOneTextureRegion2;
+    private ITextureRegion mRectangleOneTextureRegion3;
+
 
     @Override
     public EngineOptions onCreateEngineOptions() {
@@ -79,6 +82,8 @@ public class Animagia extends BaseGameActivity {
 
 
         mRectangleOneTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(buildableBitmapTextureAtlas, this, "book.png");
+        mRectangleOneTextureRegion2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(buildableBitmapTextureAtlas, this, "animit.png");
+        mRectangleOneTextureRegion3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(buildableBitmapTextureAtlas, this, "bag.png");
 
         BlackPawnTextureAtlasBuilder<IBitmapTextureAtlasSource, BitmapTextureAtlas> blackPawnTextureAtlasBuilder = new BlackPawnTextureAtlasBuilder<>(0, 0, 0);
         buildableBitmapTextureAtlas.build(blackPawnTextureAtlasBuilder);
@@ -120,6 +125,10 @@ public class Animagia extends BaseGameActivity {
 
         Sprite bookSprite = new Sprite(0,0,mRectangleOneTextureRegion,getVertexBufferObjectManager());
         scene.attachChild(bookSprite);
+        Sprite animitSprite = new Sprite(50,50,mRectangleOneTextureRegion2,getVertexBufferObjectManager());
+        scene.attachChild(animitSprite);
+        Sprite bagSprite = new Sprite(200,200,mRectangleOneTextureRegion3,getVertexBufferObjectManager());
+        scene.attachChild(bagSprite);
 //        scene.setBackground(new RectangularShape(0,0,200,200,new ShaderProgram()))
 //        scene.setBackground(new Background(0.9804f, 0.8f, 0.0f));
 
